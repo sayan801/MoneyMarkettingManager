@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyMarkettingManager", "sadlDemo\MoneyMarkettingManager.csproj", "{E24E6AA8-E482-43B4-8684-4755613ACA37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SadlData", "SadlData\SadlData.csproj", "{F907FED4-0C84-4607-89B5-456084EEF9B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SadlDb", "SadlDb\SadlDb.csproj", "{CEF03050-6C1A-48D9-AC31-281B72B2EE63}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SadlSetup", "SadlSetup\SadlSetup.vdproj", "{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Debug|x86.ActiveCfg = Debug|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Debug|x86.Build.0 = Debug|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Release|Any CPU.ActiveCfg = Release|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Release|x86.ActiveCfg = Release|x86
+		{E24E6AA8-E482-43B4-8684-4755613ACA37}.Release|x86.Build.0 = Release|x86
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F907FED4-0C84-4607-89B5-456084EEF9B8}.Release|x86.ActiveCfg = Release|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|x86.ActiveCfg = Release|Any CPU
+		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Debug|Any CPU.ActiveCfg = Debug
+		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Debug|x86.ActiveCfg = Debug
+		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Release|Any CPU.ActiveCfg = Release
+		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Release|Mixed Platforms.ActiveCfg = Release
+		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

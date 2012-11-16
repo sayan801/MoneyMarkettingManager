@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="sadlDemo.Clients.ClientInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+              d:DesignHeight="1516" d:DesignWidth="661">
+    <UserControl.Resources>
+        <Style x:Key="datePickerStyle" TargetType="DatePicker">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="labelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#FFE9F9DE" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="textboxStyle" TargetType="TextBox">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="comboboxStyle" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="SelectedIndex" Value="0"/>
+        </Style>
+
+    </UserControl.Resources>
+    <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <DockPanel  Background="#FF256D25" LastChildFill="True">
+            <UniformGrid Columns="2">
+                <!--<Label  Style="{StaticResource labelStyle}">Title</Label>
+                <ComboBox  Name="titleNameCombobox"  Style="{StaticResource comboboxStyle}">
+                    <ComboBoxItem>Mr.</ComboBoxItem>
+                    <ComboBoxItem>Mrs.</ComboBoxItem>
+                    <ComboBoxItem>Ms.</ComboBoxItem>
+                </ComboBox>-->
+                <Label  Style="{StaticResource labelStyle}">Name</Label>
+                <TextBox  Name="nameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label  Style="{StaticResource labelStyle}">Join date</Label>
+                <DatePicker Name="joinDatePicker" Style="{StaticResource datePickerStyle}"></DatePicker>
+                <Label Style="{StaticResource labelStyle}">Date of Birth</Label>
+                <DatePicker  Name="clientDobDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker>
+                <Label  Style="{StaticResource labelStyle}">Id</Label>
+                <TextBox  Name="clientIdTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Joint Applicant Name</Label>
+                <TextBox  Name="jointApplicantNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Joint Applicant DOB</Label>
+                <DatePicker  Name="jointApplicantDobDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker>
+                <Label Style="{StaticResource labelStyle}">Guardian/Father Name</Label>
+                <TextBox  Name="clientGuardianFatherNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Address</Label>
+                <TextBox  Name="clientAddressTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Pin Code</Label>
+                <TextBox  Name="clientPinCodeTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Phone Number</Label>
+                <TextBox  Name="clientPhoneNumberTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Occupation</Label>
+                <TextBox  Name="clientOccupationTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Nominee Name</Label>
+                <TextBox  Name="clientNomineeNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Nominee Date of Birth</Label>
+                <DatePicker  Name="clientNomineeDateOfBirthDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker>
+                <Label Style="{StaticResource labelStyle}">Relationship With Client</Label>
+                <TextBox  Name="clientNomineeRelationshipTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Plan</Label>
+                <TextBox  Name="clientPlanTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Propose Value</Label>
+                <TextBox  Name="clientProposedValueTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Month/Period</Label>
+                <TextBox  Name="clientPeriodMonthTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Mode of Payment</Label>
+                <ComboBox  Name="clientPaymentModeCombobox"  Style="{StaticResource comboboxStyle}">
+                    <ComboBoxItem>Cash</ComboBoxItem>
+                    <ComboBoxItem>Cheque</ComboBoxItem>
+                    <ComboBoxItem>Demand Draft</ComboBoxItem>
+                </ComboBox>
+                <Label Style="{StaticResource labelStyle}">Payment Amount- Installment</Label>
+                <TextBox  Name="clientPaymentAmountInstalmentTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Payment Amount- Service Charge</Label>
+                <TextBox  Name="clientPaymentAmountServiceChargeTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Payment Amount- Total</Label>
+                <TextBox  Name="clientPaymentAmountTotalTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Payment Receipt Number</Label>
+                <TextBox  Name="clientPaymentReceiptNumberTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>               
+                <Label Style="{StaticResource labelStyle}">Introducer Id</Label>
+                <TextBox  Name="clientIntroducerIdTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+            </UniformGrid>
+        </DockPanel>
+    </ScrollViewer>
+</UserControl>

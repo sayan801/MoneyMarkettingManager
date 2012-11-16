@@ -1,0 +1,130 @@
+﻿<Window x:Class="sadlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sobujayan Agro Development LTD" Height="540" Width="1326" WindowState="Maximized" Background="#FF256D25">
+    <Window.Resources>
+        <Style x:Key="labelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#FFE9F9DE" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="60" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="20 0 0 0"/>
+        </Style>
+        <Style x:Key="textboxStyle" TargetType="TextBox">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="60" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="comboboxStyle" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="60" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="SelectedIndex" Value="0"/>
+        </Style>
+        <Style x:Key="ControlBtnStyle" TargetType="Button">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Green" Offset="0" />
+                        <GradientStop Color="#FFE0C375" Offset="1" />
+                    </RadialGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="#FFE9F9DE" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderBrush" Value="#FF3DC43D" />
+            <Setter Property="Width" Value="300" />
+            <Setter Property="Height" Value="100" />
+            <Setter Property="OpacityMask" Value="White" />
+        </Style>
+        <Style x:Key="MainBtnStyle" TargetType="Button">
+
+            <Setter Property="Background">
+                <Setter.Value>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFE6F032" Offset="0.119" />
+                        <GradientStop Color="#57CD8C1B" Offset="1" />
+                    </RadialGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="#FF30962D" />
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderBrush" Value="#FF001900" />
+        </Style>
+    </Window.Resources>
+    <DockPanel LastChildFill="True">
+        <Image DockPanel.Dock="Top" Name="companyLogoImage" Source="/sadlDemo;component/Images/logo.png" StretchDirection="DownOnly"></Image>
+        <Image DockPanel.Dock="Top" Name="companyNameImage" Source="/sadlDemo;component/Images/name.jpg" StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+        <UniformGrid Width="300" DockPanel.Dock="Left" HorizontalAlignment="Left" Columns="1">
+            <Button Content="Login" Name="loginBtn" Style="{StaticResource MainBtnStyle}" Click="loginBtn_Click"></Button>
+            <Button Content="Employees" Name="employeesBtn" Click="employeesBtn_Click" Style="{StaticResource MainBtnStyle}"></Button>
+            <Button Content="Agents" Name="agentsBtn" Click="agentsBtn_Click" Style="{StaticResource MainBtnStyle}"></Button>
+            <Button Content="Clients" Name="clientsBtn" Click="clientsBtn_Click" Style="{StaticResource MainBtnStyle}"></Button>
+        </UniformGrid>
+        <UniformGrid Width="300" DockPanel.Dock="right" HorizontalAlignment="Right" Columns="1">
+
+            <Button Content="Report" Name="reportsBtn"  Style="{StaticResource MainBtnStyle}"></Button>
+            <Button Content="Settings" Name="settingsBtn"  Style="{StaticResource MainBtnStyle}"></Button>
+            <Button Content="Help" Name="helpBtn"  Style="{StaticResource MainBtnStyle}"></Button>
+            <Button Content="Close" Name="closeBtn"  Style="{StaticResource MainBtnStyle}" Click="closeBtn_Click"></Button>
+        </UniformGrid>
+        <TabControl Name="controlsTab" DockPanel.Dock="Bottom" TabStripPlacement="Bottom" Background="#37000000" SelectionChanged="controlsTab_SelectionChanged">
+            <TabItem Name="homeTab" >
+                <Image Source="/sadlDemo;component/Images/banner1.jpg"></Image>
+            </TabItem>
+            <TabItem Name="loginTab">
+                <UniformGrid Columns="2">
+                    <Label  Style="{StaticResource labelStyle}">User Name</Label>
+                    <TextBox  Name="userNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                    <Label   Style="{StaticResource labelStyle}">User Type</Label>
+                    <ComboBox Name="userTypeCombobox" Style="{StaticResource comboboxStyle}">
+                        <ComboBoxItem>User</ComboBoxItem>
+                        <ComboBoxItem>Manager</ComboBoxItem>
+                        <ComboBoxItem>Owner</ComboBoxItem>
+                    </ComboBox>
+                    <Label  Style="{StaticResource labelStyle}">Enter Password</Label>
+                    <PasswordBox Name="passwordBox"  Margin="10"  Height="60" VerticalContentAlignment="Center"></PasswordBox>
+                    <Button Name="dologoutBtn" IsEnabled="False" Margin="10" Click="dologoutBtn_Click"    Style="{StaticResource ControlBtnStyle}">Log Out</Button>
+                    <Button Name="dologinBtn" Margin="10" Click="dologinBtn_Click"    Style="{StaticResource ControlBtnStyle}">Login</Button>
+                    
+                </UniformGrid>
+            </TabItem>
+            <TabItem Name="empTab">
+                <UniformGrid>
+                    <Button Name="addEmployeeBtn" Content="Add Employee"   Style="{StaticResource ControlBtnStyle}" Click="addEmployeeBtn_Click"></Button>
+                    <Button Name="viewEmployeeBtn"   Style="{StaticResource ControlBtnStyle}" Click="viewEmployeeBtn_Click">View Employee</Button>
+                    <Button Name="editEmployeeBtn"   Style="{StaticResource ControlBtnStyle}" Click="editEmployeeBtn_Click">Edit Employee</Button>
+                    <Button Name="closeEmpBtn"   Style="{StaticResource ControlBtnStyle}" Click="closeEmpBtn_Click">Close</Button>
+                </UniformGrid>
+            </TabItem>
+            <TabItem Name="agentsTab">
+                <UniformGrid>
+                    <Button Name="addAgentsBtn"   Style="{StaticResource ControlBtnStyle}" Click="addAgentsBtn_Click">Add Agents</Button>
+                    <Button Name="viewAgentsBtn"   Style="{StaticResource ControlBtnStyle}" Click="viewAgentsBtn_Click">View Agents</Button>
+                    <Button Name="editAgentsBtn"   Style="{StaticResource ControlBtnStyle}" Click="editAgentsBtn_Click">Edit Agents</Button>
+                    <Button Name="closeAgentsBtn" Click="closeEmpBtn_Click"  Style="{StaticResource ControlBtnStyle}">Close</Button>
+                </UniformGrid>
+            </TabItem>
+            <TabItem Name="clientsTab">
+                <UniformGrid>
+                    <Button Name="addClientsBtn"   Style="{StaticResource ControlBtnStyle}" Click="addClientsBtn_Click">Add Clients</Button>
+                    <Button Name="viewClientsBtn"   Style="{StaticResource ControlBtnStyle}" Click="viewClientsBtn_Click">View Clients</Button>
+                    <Button Name="editClientsBtn"   Style="{StaticResource ControlBtnStyle}" Click="editClientsBtn_Click">Edit Clients</Button>
+                    <Button Name="closeClientsBtn" Click="closeEmpBtn_Click"   Style="{StaticResource ControlBtnStyle}">Close</Button>
+                </UniformGrid>
+            </TabItem>
+        </TabControl>
+
+    </DockPanel>
+
+</Window>

@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="sadlDemo.Agents.SearchAgent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="422" d:DesignWidth="691" Background="#FF256D25">
+    <UserControl.Resources>
+        <Style x:Key="ControlBtnStyle" TargetType="Button">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Green" Offset="0" />
+                        <GradientStop Color="#FFE0C375" Offset="1" />
+                    </RadialGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="#FFE9F9DE" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderBrush" Value="#FF3DC43D" />
+            <Setter Property="Width" Value="300" />
+            <Setter Property="Height" Value="100" />
+            <Setter Property="OpacityMask" Value="White" />
+        </Style>
+    </UserControl.Resources>
+    <DockPanel LastChildFill="True">
+        <Button Width="200" Height="60" DockPanel.Dock="Top" Name="viewAllAgentBtn" Click="viewAllAgentBtn_Click" Style="{StaticResource ControlBtnStyle}" >View All Agents</Button>
+        <ListView  Background="#FF256D25" Name="agentListView" Foreground="Black" DockPanel.Dock="Bottom" MouseDoubleClick="agentListView_MouseDoubleClick"  ItemsSource="{Binding agentCollection}">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Right" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="160" Header="Name"   DisplayMemberBinding="{Binding agentName}"  />
+                    <GridViewColumn Width="150" Header="Rank"   DisplayMemberBinding="{Binding rank}"  />
+                    <GridViewColumn Width="150" Header="Id"   DisplayMemberBinding="{Binding agentId}"  />
+                    <GridViewColumn Width="200" Header="Address"   DisplayMemberBinding="{Binding agentAddress}"  />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</UserControl>

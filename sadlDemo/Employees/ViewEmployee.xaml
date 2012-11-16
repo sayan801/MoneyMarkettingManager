@@ -1,0 +1,10 @@
+﻿<Window x:Class="sadlDemo.Employees.ViewEmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="View Employee" Height="389" Width="695"  Background="#FF256D25">
+    <!--<DockPanel Name="viewEmployeeDockPanel" LastChildFill="True">
+        
+    </DockPanel>-->
+</Window>

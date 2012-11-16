@@ -1,0 +1,8 @@
+﻿<Window x:Class="sadlDemo.Agents.EditAgent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Edit Agent" Height="422" Width="691"  Background="#FF256D25">
+
+</Window>

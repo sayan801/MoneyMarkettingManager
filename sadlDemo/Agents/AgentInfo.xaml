@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="sadlDemo.AgentInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1157" d:DesignWidth="662">
+    <UserControl.Resources>
+        <Style x:Key="datePickerStyle" TargetType="DatePicker">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="labelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#FFE9F9DE" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="textboxStyle" TargetType="TextBox">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="comboboxStyle" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="SelectedIndex" Value="0"/>
+        </Style>
+
+    </UserControl.Resources>
+    <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <DockPanel  Background="#FF256D25" LastChildFill="True">
+            <UniformGrid Columns="2">
+                <!--<Label  Style="{StaticResource labelStyle}">Title</Label>
+                <ComboBox  Name="titleNameCombobox"  Style="{StaticResource comboboxStyle}">
+                    <ComboBoxItem>Mr.</ComboBoxItem>
+                    <ComboBoxItem>Mrs.</ComboBoxItem>
+                    <ComboBoxItem>Ms.</ComboBoxItem>
+                </ComboBox>-->
+                <Label  Style="{StaticResource labelStyle}">Name</Label>
+                <TextBox  Name="nameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>               
+                <Label  Style="{StaticResource labelStyle}">Join date</Label>
+                <DatePicker Name="joinDatePicker" Style="{StaticResource datePickerStyle}"></DatePicker>
+                <Label Style="{StaticResource labelStyle}">Rank</Label>
+                <TextBox  Name="rankTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Id</Label>
+                <TextBox  Name="agentIdTxtbox" IsReadOnly="True" Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Designation</Label>
+                <TextBox  Name="designationTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Father / Husband Name</Label>
+                <TextBox  Name="fatherHusbandNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Address</Label>
+                <TextBox  Name="addressTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Pincode</Label>
+                <TextBox  Name="pincodeTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">State</Label>
+                <TextBox  Name="stateTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Phone Number</Label>
+                <TextBox  Name="phoneNoTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Blood Group</Label>
+                <TextBox  Name="bloodGroupTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Date of Birth</Label>
+                <DatePicker  Name="dobDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker> 
+                <Label Style="{StaticResource labelStyle}">Nationality</Label>
+                <TextBox  Name="nationalityTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Qualification</Label>
+                <TextBox  Name="qualificationTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Nominee Name</Label>
+                <TextBox  Name="nomineeNameTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Nominee Dob</Label>
+                <DatePicker  Name="nomineeAgeDatepicker"  Style="{StaticResource datePickerStyle}"></DatePicker>
+                <Label Style="{StaticResource labelStyle}">Nominee Relationship</Label>
+                <TextBox  Name="nomineeRelationshipTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Introducer Id</Label>
+                <TextBox  Name="introducerIdTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+                <Label Style="{StaticResource labelStyle}">Branch</Label>
+                <TextBox  Name="branchTxtbox"  Style="{StaticResource textboxStyle}"></TextBox>
+            </UniformGrid>
+        </DockPanel>
+    </ScrollViewer>
+</UserControl>
