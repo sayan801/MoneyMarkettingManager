@@ -1,4 +1,4 @@
-﻿<Window xmlns:my="clr-namespace:sadlDemo"  x:Class="sadlDemo.Agents.EditAgentDetails"
+﻿<Window xmlns:my="clr-namespace:MmmDemo"  x:Class="MmmDemo.Agents.EditAgentDetails"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="EditAgentDetails" Height="800" Width="600"  Background="#FF256D25">

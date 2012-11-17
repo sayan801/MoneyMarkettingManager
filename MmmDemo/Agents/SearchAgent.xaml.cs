@@ -13,17 +13,17 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
-namespace sadlDemo.Agents
+namespace MmmDemo.Agents
 {
     /// <summary>
     /// Interaction logic for SearchAgent.xaml
     /// </summary>
     public partial class SearchAgent : UserControl
     {
-        ObservableCollection<SadlData.AgentDetails> _agentCollection = new ObservableCollection<SadlData.AgentDetails>();
+        ObservableCollection<MmmData.AgentDetails> _agentCollection = new ObservableCollection<MmmData.AgentDetails>();
 
 
-        public ObservableCollection<SadlData.AgentDetails> agentCollection
+        public ObservableCollection<MmmData.AgentDetails> agentCollection
         {
             get
             {
@@ -31,9 +31,9 @@ namespace sadlDemo.Agents
             }
         }
 
-        SadlData.ViewOrEdit type;
+        MmmData.ViewOrEdit type;
 
-        public SearchAgent(SadlData.ViewOrEdit typeDetails)
+        public SearchAgent(MmmData.ViewOrEdit typeDetails)
         {
             InitializeComponent();
             type = typeDetails;
@@ -41,17 +41,17 @@ namespace sadlDemo.Agents
         private void viewAllAgentBtn_Click(object sender, RoutedEventArgs e)
         {
             _agentCollection.Clear();
-            List<SadlData.AgentDetails> agents = SadlDb.DbInteraction.GetAllAgentList();
+            List<MmmData.AgentDetails> agents = MmmDb.DbInteraction.GetAllAgentList();
 
-            foreach (SadlData.AgentDetails agentInfo in agents)
+            foreach (MmmData.AgentDetails agentInfo in agents)
                 _agentCollection.Add(agentInfo);
         }
 
         private void agentListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            SadlData.AgentDetails selectedAgent = GetSelectedItem();
+            MmmData.AgentDetails selectedAgent = GetSelectedItem();
 
-            if (type == SadlData.ViewOrEdit.View)
+            if (type == MmmData.ViewOrEdit.View)
             {
                 ViewAgentDetails details = new ViewAgentDetails(selectedAgent);
                 details.ShowDialog();
@@ -64,16 +64,16 @@ namespace sadlDemo.Agents
            
         }
 
-        private SadlData.AgentDetails GetSelectedItem()
+        private MmmData.AgentDetails GetSelectedItem()
         {
 
-            SadlData.AgentDetails agentToSelect = null;
+            MmmData.AgentDetails agentToSelect = null;
 
             if (agentListView.SelectedIndex == -1)
                 MessageBox.Show("Please Select an Item");
             else
             {
-                SadlData.AgentDetails i = (SadlData.AgentDetails)agentListView.SelectedItem;
+                MmmData.AgentDetails i = (MmmData.AgentDetails)agentListView.SelectedItem;
 
                 agentToSelect = _agentCollection.Where(item => item.agentId.Equals(i.agentId)).First();
             }

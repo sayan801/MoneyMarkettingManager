@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
-namespace sadlDemo.Clients
+namespace MmmDemo.Clients
 {
     /// <summary>
     /// Interaction logic for ViewCient.xaml
@@ -24,7 +24,7 @@ namespace sadlDemo.Clients
         {
             InitializeComponent();
 
-            SearchClient searchClient = new SearchClient(SadlData.ViewOrEdit.View);
+            SearchClient searchClient = new SearchClient(MmmData.ViewOrEdit.View);
             this.AddChild(searchClient);
         }
 

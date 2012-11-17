@@ -1,4 +1,4 @@
-﻿<Window xmlns:my="clr-namespace:sadlDemo.Employees"  x:Class="sadlDemo.Employees.AddNewEmployee"
+﻿<Window xmlns:my="clr-namespace:MmmDemo.Employees"  x:Class="MmmDemo.Employees.AddNewEmployee"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="AddNewEmployee" Height="700" Width="700"  Background="#FF256D25">

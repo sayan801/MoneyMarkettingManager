@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyMarkettingManager", "MmmDemo\MoneyMarkettingManager.csproj", "{E24E6AA8-E482-43B4-8684-4755613ACA37}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MmmData", "MmmData\MmmData.csproj", "{F907FED4-0C84-4607-89B5-456084EEF9B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MmmDb", "MmmDb\MmmDb.csproj", "{CEF03050-6C1A-48D9-AC31-281B72B2EE63}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MmmSetup", "SadlSetup\MmmSetup.vdproj", "{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,12 +47,6 @@ Global
 		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{CEF03050-6C1A-48D9-AC31-281B72B2EE63}.Release|x86.ActiveCfg = Release|Any CPU
-		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Debug|Any CPU.ActiveCfg = Debug
-		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Debug|x86.ActiveCfg = Debug
-		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Release|Any CPU.ActiveCfg = Release
-		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Release|Mixed Platforms.ActiveCfg = Release
-		{F87E0F75-2D3A-4536-8BFA-1BDB2AC38B16}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

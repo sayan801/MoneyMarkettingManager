@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SadlData;
+using MmmData;
 
-namespace SadlDb
+namespace MmmDb
 {
     public static class DbInteraction
     {
         #region Login
 
-        public static bool DoSadlLogin(LoginData loginData)
+        public static bool DoMmmLogin(LoginData loginData)
         {
             return FetcheLoginData(loginData);
         }
@@ -21,7 +21,7 @@ namespace SadlDb
 
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = null;
 
-            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=sadl_mb;persist security info=False");
+            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=Mmm_mb;persist security info=False");
             try
             {   //define the command reference
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
@@ -67,7 +67,7 @@ namespace SadlDb
             int returnVal = 0;
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = null;
 
-            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=sadl_mb;persist security info=False");
+            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=Mmm_mb;persist security info=False");
             try
             {
                 //define the command reference
@@ -128,7 +128,7 @@ namespace SadlDb
             List<AgentDetails> agentList = new List<AgentDetails>();
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = null;
 
-            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=sadl_mb;persist security info=False");
+            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=Mmm_mb;persist security info=False");
             try
             {   //define the command reference
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
@@ -194,7 +194,7 @@ namespace SadlDb
             int returnVal = 0;
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = null;
 
-            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=sadl_mb;persist security info=False");
+            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=Mmm_mb;persist security info=False");
             try
             {
                 //define the command reference
@@ -260,7 +260,7 @@ namespace SadlDb
             List<ClientDetails> clientList = new List<ClientDetails>();
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = null;
 
-            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=sadl_mb;persist security info=False");
+            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=Mmm_mb;persist security info=False");
             try
             {   //define the command reference
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
@@ -330,7 +330,7 @@ namespace SadlDb
             int returnVal = 0;
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = null;
 
-            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=sadl_mb;persist security info=False");
+            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=Mmm_mb;persist security info=False");
             try
             {
                 //define the command reference
@@ -381,7 +381,7 @@ namespace SadlDb
             List<EmployeeDetails> employeeList = new List<EmployeeDetails>();
             MySql.Data.MySqlClient.MySqlConnection msqlConnection = null;
 
-            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=sadl_mb;persist security info=False");
+            msqlConnection = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;Password=technicise;database=Mmm_mb;persist security info=False");
             try
             {   //define the command reference
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();

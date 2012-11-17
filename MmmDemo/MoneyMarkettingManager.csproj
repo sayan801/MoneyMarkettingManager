@@ -8,8 +8,8 @@
     <ProjectGuid>{E24E6AA8-E482-43B4-8684-4755613ACA37}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>sadlDemo</RootNamespace>
-    <AssemblyName>sadlDemo</AssemblyName>
+    <RootNamespace>MmmDemo</RootNamespace>
+    <AssemblyName>MmmDemo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -258,7 +258,9 @@
   <ItemGroup>
     <Resource Include="Images\banner1.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\technicise.logo-header-medium.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

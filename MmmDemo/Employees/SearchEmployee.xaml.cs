@@ -13,16 +13,16 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
-namespace sadlDemo.Employees
+namespace MmmDemo.Employees
 {
     /// <summary>
     /// Interaction logic for SearchEmployee.xaml
     /// </summary>
     public partial class SearchEmployee : UserControl
     {
-        ObservableCollection<SadlData.EmployeeDetails> _employeeCollection = new ObservableCollection<SadlData.EmployeeDetails>();
+        ObservableCollection<MmmData.EmployeeDetails> _employeeCollection = new ObservableCollection<MmmData.EmployeeDetails>();
 
-        public ObservableCollection<SadlData.EmployeeDetails> employeeCollection
+        public ObservableCollection<MmmData.EmployeeDetails> employeeCollection
         {
             get
             {
@@ -30,9 +30,9 @@ namespace sadlDemo.Employees
             }
         }
 
-        SadlData.ViewOrEdit type;
+        MmmData.ViewOrEdit type;
 
-        public SearchEmployee(SadlData.ViewOrEdit typeDetails)
+        public SearchEmployee(MmmData.ViewOrEdit typeDetails)
         {
             InitializeComponent();
             type = typeDetails;
@@ -41,17 +41,17 @@ namespace sadlDemo.Employees
         private void viewAllEmployeesBtn_Click(object sender, RoutedEventArgs e)
         {
             _employeeCollection.Clear();
-            List<SadlData.EmployeeDetails> employees = SadlDb.DbInteraction.GetAllEmployeeList();
+            List<MmmData.EmployeeDetails> employees = MmmDb.DbInteraction.GetAllEmployeeList();
 
-            foreach (SadlData.EmployeeDetails employeeInfo in employees)
+            foreach (MmmData.EmployeeDetails employeeInfo in employees)
                 _employeeCollection.Add(employeeInfo);
         }
 
         private void employeeListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            SadlData.EmployeeDetails selectedemployee = GetSelectedItem();
+            MmmData.EmployeeDetails selectedemployee = GetSelectedItem();
 
-            if (type == SadlData.ViewOrEdit.View)
+            if (type == MmmData.ViewOrEdit.View)
             {
                 ViewEmployeeDetails viewDetails = new ViewEmployeeDetails(selectedemployee);
                 viewDetails.ShowDialog();
@@ -63,16 +63,16 @@ namespace sadlDemo.Employees
             }
         }
 
-        private SadlData.EmployeeDetails GetSelectedItem()
+        private MmmData.EmployeeDetails GetSelectedItem()
         {
 
-            SadlData.EmployeeDetails agentToSelect = null;
+            MmmData.EmployeeDetails agentToSelect = null;
 
             if (employeeListView.SelectedIndex == -1)
                 MessageBox.Show("Please Select an Item");
             else
             {
-                SadlData.EmployeeDetails i = (SadlData.EmployeeDetails)employeeListView.SelectedItem;
+                MmmData.EmployeeDetails i = (MmmData.EmployeeDetails)employeeListView.SelectedItem;
 
                 agentToSelect = _employeeCollection.Where(item => item.employeeId.Equals(i.employeeId)).First();
             }

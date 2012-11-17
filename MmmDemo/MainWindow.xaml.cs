@@ -11,9 +11,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SadlData;
+using MmmData;
 
-namespace sadlDemo
+namespace MmmDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -54,7 +54,7 @@ namespace sadlDemo
             loginData.password = passwordBox.Password;
             loginData.type = (UserTypeEnum)Enum.Parse(typeof(UserTypeEnum), userTypeCombobox.Text, true);
 
-            bool loginStatus = SadlDb.DbInteraction.DoSadlLogin(loginData);
+            bool loginStatus = MmmDb.DbInteraction.DoMmmLogin(loginData);
             dologinBtn.IsEnabled = !loginStatus;
             dologoutBtn.IsEnabled = loginStatus;            
         }

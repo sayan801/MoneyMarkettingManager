@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo.Employees
+namespace MmmDemo.Employees
 {
     /// <summary>
     /// Interaction logic for EditEmployee.xaml
@@ -21,7 +21,7 @@ namespace sadlDemo.Employees
         public EditEmployee()
         {
             InitializeComponent();
-            SearchEmployee searchEmployee = new SearchEmployee(SadlData.ViewOrEdit.Edit);
+            SearchEmployee searchEmployee = new SearchEmployee(MmmData.ViewOrEdit.Edit);
             this.AddChild(searchEmployee);
         }
     }

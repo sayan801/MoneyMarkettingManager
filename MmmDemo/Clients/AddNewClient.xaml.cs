@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo.Clients
+namespace MmmDemo.Clients
 {
     /// <summary>
     /// Interaction logic for AddNewClient.xaml
@@ -25,11 +25,11 @@ namespace sadlDemo.Clients
 
         private void registerNewClientBtn_Click(object sender, RoutedEventArgs e)
         {
-            SadlData.ClientDetails clientDetails = clientInfoControl.GetDetails();
+            MmmData.ClientDetails clientDetails = clientInfoControl.GetDetails();
 
-            clientDetails.clientId = SadlData.IdGenerator.GetClientUniqueId();
+            clientDetails.clientId = MmmData.IdGenerator.GetClientUniqueId();
 
-            if (SadlDb.DbInteraction.DoRegisterNewClient(clientDetails) == 1)
+            if (MmmDb.DbInteraction.DoRegisterNewClient(clientDetails) == 1)
             {
                 this.Close();
             }

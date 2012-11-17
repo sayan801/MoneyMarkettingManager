@@ -11,14 +11,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo.Employees
+namespace MmmDemo.Employees
 {
     /// <summary>
     /// Interaction logic for EditEmployeeDetails.xaml
     /// </summary>
     public partial class EditEmployeeDetails : Window
     {
-        public EditEmployeeDetails(SadlData.EmployeeDetails employeeDetails)
+        public EditEmployeeDetails(MmmData.EmployeeDetails employeeDetails)
         {
             InitializeComponent();
             employeeEditControl.SetDetails(employeeDetails);

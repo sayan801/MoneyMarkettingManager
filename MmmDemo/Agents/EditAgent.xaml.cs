@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo.Agents
+namespace MmmDemo.Agents
 {
     /// <summary>
     /// Interaction logic for EditAgent.xaml
@@ -21,7 +21,7 @@ namespace sadlDemo.Agents
         public EditAgent()
         {
             InitializeComponent();
-            SearchAgent searchAgent = new SearchAgent(SadlData.ViewOrEdit.Edit);
+            SearchAgent searchAgent = new SearchAgent(MmmData.ViewOrEdit.Edit);
             this.AddChild(searchAgent);
         }
     }

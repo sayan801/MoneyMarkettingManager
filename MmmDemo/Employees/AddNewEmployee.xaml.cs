@@ -10,9 +10,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using SadlData;
+using MmmData;
 
-namespace sadlDemo.Employees
+namespace MmmDemo.Employees
 {
     /// <summary>
     /// Interaction logic for AddNewEmployee.xaml
@@ -26,11 +26,11 @@ namespace sadlDemo.Employees
 
         private void registerNewClientBtn_Click(object sender, RoutedEventArgs e)
         {
-            SadlData.EmployeeDetails employeeDetails = employeeInfoControl.getDetails();
+            MmmData.EmployeeDetails employeeDetails = employeeInfoControl.getDetails();
 
-            employeeDetails.employeeId = SadlData.IdGenerator.GetEmployeeUniqueId();
+            employeeDetails.employeeId = MmmData.IdGenerator.GetEmployeeUniqueId();
 
-            if (SadlDb.DbInteraction.DoRegisterNewEmployee(employeeDetails) == 1)
+            if (MmmDb.DbInteraction.DoRegisterNewEmployee(employeeDetails) == 1)
             {
                 this.Close();
             }

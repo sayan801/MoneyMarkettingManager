@@ -11,9 +11,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SadlData;
+using MmmData;
 
-namespace sadlDemo.Clients
+namespace MmmDemo.Clients
 {
     /// <summary>
     /// Interaction logic for ClientInfo.xaml

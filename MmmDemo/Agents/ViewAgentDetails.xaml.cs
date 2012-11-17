@@ -11,14 +11,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo.Agents
+namespace MmmDemo.Agents
 {
     /// <summary>
     /// Interaction logic for ViewAgentDetails.xaml
     /// </summary>
     public partial class ViewAgentDetails : Window
     {
-        public ViewAgentDetails(SadlData.AgentDetails agentDetails)
+        public ViewAgentDetails(MmmData.AgentDetails agentDetails)
         {
             InitializeComponent();
 

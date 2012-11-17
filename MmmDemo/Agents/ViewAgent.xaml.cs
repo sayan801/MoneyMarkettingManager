@@ -12,17 +12,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
-namespace sadlDemo.Agents
+namespace MmmDemo.Agents
 {
     /// <summary>
     /// Interaction logic for ViewAgent.xaml
     /// </summary>
     public partial class ViewAgent : Window
     {
-        //ObservableCollection<SadlData.AgentDetails> _agentCollection = new ObservableCollection<SadlData.AgentDetails>();
+        //ObservableCollection<MmmData.AgentDetails> _agentCollection = new ObservableCollection<MmmData.AgentDetails>();
 
 
-        //public ObservableCollection<SadlData.AgentDetails> agentCollection
+        //public ObservableCollection<MmmData.AgentDetails> agentCollection
         //{
         //    get
         //    {
@@ -33,36 +33,36 @@ namespace sadlDemo.Agents
         public ViewAgent()
         {
             InitializeComponent();
-            SearchAgent searchAgent = new SearchAgent(SadlData.ViewOrEdit.View);
+            SearchAgent searchAgent = new SearchAgent(MmmData.ViewOrEdit.View);
             this.AddChild(searchAgent);
         }
 
         //private void viewAllAgentBtn_Click(object sender, RoutedEventArgs e)
         //{
         //    _agentCollection.Clear();
-        //    List<SadlData.AgentDetails> agents = SadlDb.DbInteraction.GetAllAgentList();
+        //    List<MmmData.AgentDetails> agents = MmmDb.DbInteraction.GetAllAgentList();
 
-        //    foreach (SadlData.AgentDetails agentInfo in agents)
+        //    foreach (MmmData.AgentDetails agentInfo in agents)
         //        _agentCollection.Add(agentInfo);
         //}
 
         //private void agentListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         //{
-        //    SadlData.AgentDetails selectedAgent = GetSelectedItem();
+        //    MmmData.AgentDetails selectedAgent = GetSelectedItem();
         //    ViewAgentDetails details = new ViewAgentDetails(selectedAgent);
         //    details.ShowDialog();
         //}
 
-        //private SadlData.AgentDetails GetSelectedItem()
+        //private MmmData.AgentDetails GetSelectedItem()
         //{
 
-        //    SadlData.AgentDetails agentToSelect = null;
+        //    MmmData.AgentDetails agentToSelect = null;
 
         //    if (agentListView.SelectedIndex == -1)
         //        MessageBox.Show("Please Select an Item");
         //    else
         //    {
-        //        SadlData.AgentDetails i = (SadlData.AgentDetails)agentListView.SelectedItem;
+        //        MmmData.AgentDetails i = (MmmData.AgentDetails)agentListView.SelectedItem;
 
         //        agentToSelect = _agentCollection.Where(item => item.agentId.Equals(i.agentId)).First();
         //    }

@@ -1,4 +1,4 @@
-﻿<Window xmlns:my="clr-namespace:sadlDemo.Clients"  x:Class="sadlDemo.Clients.AddNewClient"
+﻿<Window xmlns:my="clr-namespace:MmmDemo.Clients"  x:Class="MmmDemo.Clients.AddNewClient"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Add New Client" Height="900" Width="600">

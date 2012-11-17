@@ -8,8 +8,8 @@
     <ProjectGuid>{CEF03050-6C1A-48D9-AC31-281B72B2EE63}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SadlDb</RootNamespace>
-    <AssemblyName>SadlDb</AssemblyName>
+    <RootNamespace>MmmDb</RootNamespace>
+    <AssemblyName>MmmDb</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

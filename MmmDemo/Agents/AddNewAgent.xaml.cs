@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo
+namespace MmmDemo
 {
     /// <summary>
     /// Interaction logic for AgentInfo.xaml
@@ -25,11 +25,11 @@ namespace sadlDemo
 
         private void registerNewAgentBtn_Click(object sender, RoutedEventArgs e)
         {
-            SadlData.AgentDetails agentDetails = agentInfoControl.GetDetails();
+            MmmData.AgentDetails agentDetails = agentInfoControl.GetDetails();
             
-            agentDetails.agentId = SadlData.IdGenerator.GetAgentUniqueId();
+            agentDetails.agentId = MmmData.IdGenerator.GetAgentUniqueId();
 
-            if (SadlDb.DbInteraction.DoRegisterNewAgent(agentDetails) == 1)
+            if (MmmDb.DbInteraction.DoRegisterNewAgent(agentDetails) == 1)
             {
                 this.Close();
             }

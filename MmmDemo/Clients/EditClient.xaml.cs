@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo.Clients
+namespace MmmDemo.Clients
 {
     /// <summary>
     /// Interaction logic for EditClient.xaml
@@ -21,7 +21,7 @@ namespace sadlDemo.Clients
         public EditClient()
         {
             InitializeComponent();
-            SearchClient searchClient = new SearchClient(SadlData.ViewOrEdit.Edit);
+            SearchClient searchClient = new SearchClient(MmmData.ViewOrEdit.Edit);
             this.AddChild(searchClient);
         }
     }

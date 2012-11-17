@@ -1,7 +1,7 @@
-﻿<Window x:Class="sadlDemo.MainWindow"
+﻿<Window x:Class="MmmDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Sobujayan Agro Development LTD" Height="540" Width="1326" WindowState="Maximized" Background="#FF256D25">
+        Title="Money marketting manager" Height="540" Width="1326" WindowState="Maximized" Background="#FF256D25">
     <Window.Resources>
         <Style x:Key="labelStyle" TargetType="Label">
             <Setter Property="Foreground" Value="#FFE9F9DE" />
@@ -63,8 +63,8 @@
         </Style>
     </Window.Resources>
     <DockPanel LastChildFill="True">
-        <Image DockPanel.Dock="Top" Name="companyLogoImage" Source="/sadlDemo;component/Images/logo.png" StretchDirection="DownOnly"></Image>
-        <Image DockPanel.Dock="Top" Name="companyNameImage" Source="/sadlDemo;component/Images/name.jpg" StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+        <Image DockPanel.Dock="Top" Name="companyLogoImage" StretchDirection="DownOnly" Source="/MmmDemo;component/Images/technicise.logo-header-medium.png"></Image>
+        <Image DockPanel.Dock="Top" Name="companyNameImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmDemo;component/Images/name.jpg" />
         <UniformGrid Width="300" DockPanel.Dock="Left" HorizontalAlignment="Left" Columns="1">
             <Button Content="Login" Name="loginBtn" Style="{StaticResource MainBtnStyle}" Click="loginBtn_Click"></Button>
             <Button Content="Employees" Name="employeesBtn" Click="employeesBtn_Click" Style="{StaticResource MainBtnStyle}"></Button>
@@ -80,7 +80,7 @@
         </UniformGrid>
         <TabControl Name="controlsTab" DockPanel.Dock="Bottom" TabStripPlacement="Bottom" Background="#37000000" SelectionChanged="controlsTab_SelectionChanged">
             <TabItem Name="homeTab" >
-                <Image Source="/sadlDemo;component/Images/banner1.jpg"></Image>
+                <Image Source="/MmmDemo;component/Images/banner1.jpg"></Image>
             </TabItem>
             <TabItem Name="loginTab">
                 <UniformGrid Columns="2">

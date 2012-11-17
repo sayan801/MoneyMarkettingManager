@@ -11,14 +11,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace sadlDemo.Clients
+namespace MmmDemo.Clients
 {
     /// <summary>
     /// Interaction logic for EditClientDetails.xaml
     /// </summary>
     public partial class EditClientDetails : Window
     {
-        public EditClientDetails(SadlData.ClientDetails selectedClient)
+        public EditClientDetails(MmmData.ClientDetails selectedClient)
         {
             InitializeComponent();
             clientDetailsControl.SetDetails(selectedClient);

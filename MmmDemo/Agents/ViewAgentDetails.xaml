@@ -1,4 +1,4 @@
-﻿<Window xmlns:my1="clr-namespace:sadlDemo"  xmlns:my="clr-namespace:sadlDemo.Clients"  x:Class="sadlDemo.Agents.ViewAgentDetails"
+﻿<Window xmlns:my1="clr-namespace:MmmDemo"  xmlns:my="clr-namespace:MmmDemo.Clients"  x:Class="MmmDemo.Agents.ViewAgentDetails"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="View Agent Details" Height="800" Width="600"  Background="#FF256D25">

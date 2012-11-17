@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
-namespace sadlDemo.Employees
+namespace MmmDemo.Employees
 {
     /// <summary>
     /// Interaction logic for ViewEmployee.xaml
@@ -26,7 +26,7 @@ namespace sadlDemo.Employees
         {
             InitializeComponent();
 
-            SearchEmployee searchEmployee = new SearchEmployee(SadlData.ViewOrEdit.View);
+            SearchEmployee searchEmployee = new SearchEmployee(MmmData.ViewOrEdit.View);
             this.AddChild(searchEmployee);
 
 
