@@ -246,13 +246,13 @@
     <Resource Include="Images\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SadlData\SadlData.csproj">
+    <ProjectReference Include="..\SadlData\MmmData.csproj">
       <Project>{F907FED4-0C84-4607-89B5-456084EEF9B8}</Project>
-      <Name>SadlData</Name>
+      <Name>MmmData</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SadlDb\SadlDb.csproj">
+    <ProjectReference Include="..\SadlDb\MmmDb.csproj">
       <Project>{CEF03050-6C1A-48D9-AC31-281B72B2EE63}</Project>
-      <Name>SadlDb</Name>
+      <Name>MmmDb</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
