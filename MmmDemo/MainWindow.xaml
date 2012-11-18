@@ -94,8 +94,8 @@
                     </ComboBox>
                     <Label  Style="{StaticResource labelStyle}">Enter Password</Label>
                     <PasswordBox Name="passwordBox"  Margin="10"  Height="60" VerticalContentAlignment="Center"></PasswordBox>
-                    <Button Name="dologoutBtn" IsEnabled="False" Margin="10" Click="dologoutBtn_Click"    Style="{StaticResource ControlBtnStyle}">Log Out</Button>
-                    <Button Name="dologinBtn" Margin="10" Click="dologinBtn_Click"    Style="{StaticResource ControlBtnStyle}">Login</Button>
+                    <Button Name="dologoutBtn" IsEnabled="False" Margin="10" Click="dologoutBtn_Click"    Style="{StaticResource ControlBtnStyle}">Sign Out</Button>
+                    <Button Name="dologinBtn" Margin="10" Click="dologinBtn_Click"    Style="{StaticResource ControlBtnStyle}">Sign In</Button>
                     
                 </UniformGrid>
             </TabItem>
