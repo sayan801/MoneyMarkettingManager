@@ -66,7 +66,7 @@
         <Image DockPanel.Dock="Top" Name="companyLogoImage" StretchDirection="DownOnly" Source="/MmmDemo;component/Images/technicise.logo-header-medium.png"></Image>
         <Image DockPanel.Dock="Top" Name="companyNameImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmDemo;component/Images/name.jpg" />
         <UniformGrid Width="300" DockPanel.Dock="Left" HorizontalAlignment="Left" Columns="1">
-            <Button Content="Login" Name="loginBtn" Style="{StaticResource MainBtnStyle}" Click="loginBtn_Click"></Button>
+            <Button Content="Sign In" Name="loginBtn" Style="{StaticResource MainBtnStyle}" Click="loginBtn_Click"></Button>
             <Button Content="Employees" Name="employeesBtn" Click="employeesBtn_Click" Style="{StaticResource MainBtnStyle}"></Button>
             <Button Content="Agents" Name="agentsBtn" Click="agentsBtn_Click" Style="{StaticResource MainBtnStyle}"></Button>
             <Button Content="Clients" Name="clientsBtn" Click="clientsBtn_Click" Style="{StaticResource MainBtnStyle}"></Button>
