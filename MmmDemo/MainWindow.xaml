@@ -3,65 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Money marketting manager" Height="540" Width="1326" WindowState="Maximized" Background="#FF256D25">
     <Window.Resources>
-        <Style x:Key="labelStyle" TargetType="Label">
-            <Setter Property="Foreground" Value="#FFE9F9DE" />
-            <Setter Property="FontSize" Value="16" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Height" Value="60" />
-            <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="Margin" Value="20 0 0 0"/>
-        </Style>
-        <Style x:Key="textboxStyle" TargetType="TextBox">
-            <Setter Property="Foreground" Value="Black" />
-            <Setter Property="FontSize" Value="16" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Height" Value="60" />
-            <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="Margin" Value="10"/>
-        </Style>
-        <Style x:Key="comboboxStyle" TargetType="ComboBox">
-            <Setter Property="Foreground" Value="Black" />
-            <Setter Property="FontSize" Value="16" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Height" Value="60" />
-            <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="HorizontalContentAlignment" Value="Center" />
-            <Setter Property="Margin" Value="10"/>
-            <Setter Property="SelectedIndex" Value="0"/>
-        </Style>
-        <Style x:Key="ControlBtnStyle" TargetType="Button">
-            <Setter Property="Background">
-                <Setter.Value>
-                    <RadialGradientBrush>
-                        <GradientStop Color="Green" Offset="0" />
-                        <GradientStop Color="#FFE0C375" Offset="1" />
-                    </RadialGradientBrush>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Foreground" Value="#FFE9F9DE" />
-            <Setter Property="FontSize" Value="20" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="BorderBrush" Value="#FF3DC43D" />
-            <Setter Property="Width" Value="300" />
-            <Setter Property="Height" Value="100" />
-            <Setter Property="OpacityMask" Value="White" />
-        </Style>
-        <Style x:Key="MainBtnStyle" TargetType="Button">
-
-            <Setter Property="Background">
-                <Setter.Value>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFE6F032" Offset="0.119" />
-                        <GradientStop Color="#57CD8C1B" Offset="1" />
-                    </RadialGradientBrush>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Foreground" Value="#FF30962D" />
-            <Setter Property="FontSize" Value="32" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="BorderBrush" Value="#FF001900" />
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
+    
     <DockPanel LastChildFill="True">
         <Image DockPanel.Dock="Top" Name="companyLogoImage" StretchDirection="DownOnly" Source="/MmmDemo;component/Images/technicise.logo-header-medium.png"></Image>
         <Image DockPanel.Dock="Top" Name="companyNameImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmDemo;component/Images/name.jpg" />

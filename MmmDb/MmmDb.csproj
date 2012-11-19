@@ -48,7 +48,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MmmData\MmmData.csproj">
       <Project>{F907FED4-0C84-4607-89B5-456084EEF9B8}</Project>
-      <Name>SadlData</Name>
+      <Name>MmmData</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

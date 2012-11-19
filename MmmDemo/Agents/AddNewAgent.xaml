@@ -3,23 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Add New Agent" Height="1225" Width="690">
     <Window.Resources>
-        <Style x:Key="ControlBtnStyle" TargetType="Button">
-            <Setter Property="Background">
-                <Setter.Value>
-                    <RadialGradientBrush>
-                        <GradientStop Color="Green" Offset="0" />
-                        <GradientStop Color="#FFE0C375" Offset="1" />
-                    </RadialGradientBrush>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Foreground" Value="#FFE9F9DE" />
-            <Setter Property="FontSize" Value="20" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="BorderBrush" Value="#FF3DC43D" />
-            <Setter Property="Width" Value="300" />
-            <Setter Property="Height" Value="100" />
-            <Setter Property="OpacityMask" Value="White" />
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <DockPanel LastChildFill="True">
         <Button Name="registerNewAgentBtn" DockPanel.Dock="Bottom" Style="{StaticResource ControlBtnStyle}" Click="registerNewAgentBtn_Click">Register</Button>

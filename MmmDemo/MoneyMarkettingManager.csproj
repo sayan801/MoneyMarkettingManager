@@ -246,6 +246,10 @@
     <Resource Include="Images\logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonStyle\MmmStyle.csproj">
+      <Project>{118D98A0-6C11-43AF-8720-25C805669E6F}</Project>
+      <Name>MmmStyle</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MmmData\MmmData.csproj">
       <Project>{F907FED4-0C84-4607-89B5-456084EEF9B8}</Project>
       <Name>MmmData</Name>
