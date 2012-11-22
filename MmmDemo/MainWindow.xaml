@@ -5,13 +5,30 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml" />
+                <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
     
     <DockPanel LastChildFill="True">
-        <Image DockPanel.Dock="Top" Name="companyLogoImage" StretchDirection="DownOnly" Source="/MmmDemo;component/Images/technicise.logo-header-medium.png"></Image>
+        <Image DockPanel.Dock="Top" Name="companyLogoImage" StretchDirection="DownOnly" Source="/MmmDemo;component/Images/technicise.logo-header-medium.png">
+            <Image.Style>
+                <Style>
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="Image.MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="(Image.Opacity)"
+							   BeginTime="0:0:0" Duration="0:0:0.5"
+							   From="1.0" To="0.0" RepeatBehavior="Forever" AutoReverse="True"/>
+
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
         <Image DockPanel.Dock="Top" Name="companyNameImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmDemo;component/Images/name.jpg" />
         <UniformGrid Width="300" DockPanel.Dock="Left" HorizontalAlignment="Left" Columns="1">
             <Button Content="Sign In" Name="loginBtn" Style="{StaticResource MainBtnStyle}" Click="loginBtn_Click"></Button>

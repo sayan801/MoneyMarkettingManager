@@ -59,5 +59,9 @@
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="BorderBrush" Value="#FF001900" />
     </Style>
+    <Style x:Key="datePickerStyle" TargetType="DatePicker">
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Margin" Value="10"/>
+    </Style>
 
 </ResourceDictionary>
