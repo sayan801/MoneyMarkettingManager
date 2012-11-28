@@ -63,5 +63,4 @@
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Margin" Value="10"/>
     </Style>
-
 </ResourceDictionary>

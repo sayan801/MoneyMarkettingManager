@@ -7,13 +7,13 @@
              DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
              d:DesignHeight="422" d:DesignWidth="691" Background="#FF256D25">
-    <Window.Resources>
+    <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
+    </UserControl.Resources>
     <DockPanel LastChildFill="True">
         <Button Width="200" Height="60" DockPanel.Dock="Top" Name="viewAllAgentBtn" Click="viewAllAgentBtn_Click" Style="{StaticResource ControlBtnStyle}" >View All Agents</Button>
         <ListView  Background="#FF256D25" Name="agentListView" Foreground="Black" DockPanel.Dock="Bottom" MouseDoubleClick="agentListView_MouseDoubleClick"  ItemsSource="{Binding agentCollection}">

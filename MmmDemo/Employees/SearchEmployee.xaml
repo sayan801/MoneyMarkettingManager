@@ -7,13 +7,13 @@
         DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
              d:DesignHeight="385" d:DesignWidth="690" Background="#FF256D25">
-    <Window.Resources>
+    <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
+    </UserControl.Resources>
     <DockPanel LastChildFill="True">
         <Button Width="200" Height="60" DockPanel.Dock="Top" Name="viewAllEmployeesBtn" Click="viewAllEmployeesBtn_Click" Style="{StaticResource ControlBtnStyle}" >View All Employees</Button>
         <ListView  Background="#FF256D25" Name="employeeListView" Foreground="Black" DockPanel.Dock="Bottom" MouseDoubleClick="employeeListView_MouseDoubleClick"  ItemsSource="{Binding employeeCollection}">

@@ -7,13 +7,13 @@
              DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
              d:DesignHeight="389" d:DesignWidth="695"   Background="#FF256D25">
-    <Window.Resources>
+    <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
+    </UserControl.Resources>
     <DockPanel LastChildFill="True">
         <Button Width="200" Height="60" DockPanel.Dock="Top" Name="viewAllClientsBtn" Click="viewAllClientsBtn_Click" Style="{StaticResource ControlBtnStyle}" >View All Clients</Button>
         <ListView  Background="#FF256D25" Name="clientListView" Foreground="Black" DockPanel.Dock="Bottom" MouseDoubleClick="clientListView_MouseDoubleClick"  ItemsSource="{Binding clientCollection}">
