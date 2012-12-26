@@ -19,7 +19,7 @@
                             <BeginStoryboard>
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetProperty="(Image.Opacity)"
-							   BeginTime="0:0:0" Duration="0:0:0.5"
+							   BeginTime="0:0:0" Duration="0:0:2"
 							   From="1.0" To="0.0" RepeatBehavior="Forever" AutoReverse="True"/>
 
                                 </Storyboard>
