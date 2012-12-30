@@ -1,0 +1,347 @@
+<Project>
+  <Name>mfms</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities />
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>MmmData.dll</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>LoginData</Name>
+        <Access>Public</Access>
+        <Location left="427" top="303" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public String userName</Member>
+        <Member type="Field">public UserTypeEnum type</Member>
+        <Member type="Field">public String password</Member>
+        <Member type="Constructor">public LoginData()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AgentDetails</Name>
+        <Access>Public</Access>
+        <Location left="867" top="897" />
+        <Size width="162" height="451" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;ClientDetails&gt; clients</Member>
+        <Member type="Property">public String agentId { get; set; }</Member>
+        <Member type="Property">public String agentTitle { get; set; }</Member>
+        <Member type="Property">public String agentName { get; set; }</Member>
+        <Member type="Property">public DateTime joinDate { get; set; }</Member>
+        <Member type="Property">public Int32 rank { get; set; }</Member>
+        <Member type="Property">public String designation { get; set; }</Member>
+        <Member type="Property">public String agentFatherHusbandName { get; set; }</Member>
+        <Member type="Property">public String agentAddress { get; set; }</Member>
+        <Member type="Property">public Int32 agentPinCode { get; set; }</Member>
+        <Member type="Property">public String agentState { get; set; }</Member>
+        <Member type="Property">public String agentPhoneNumber { get; set; }</Member>
+        <Member type="Property">public String agentBloodGroup { get; set; }</Member>
+        <Member type="Property">public DateTime agentDateOfBirth { get; set; }</Member>
+        <Member type="Property">public String agentNationality { get; set; }</Member>
+        <Member type="Property">public String agentQualification { get; set; }</Member>
+        <Member type="Property">public String agentNomineeName { get; set; }</Member>
+        <Member type="Property">public DateTime agentNomineeDob { get; set; }</Member>
+        <Member type="Property">public String agentNomineeRelationship { get; set; }</Member>
+        <Member type="Property">public String agentIntroducerId { get; set; }</Member>
+        <Member type="Property">public String agentBranchId { get; set; }</Member>
+        <Member type="Constructor">public AgentDetails()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ClientDetails</Name>
+        <Access>Public</Access>
+        <Location left="655" top="897" />
+        <Size width="162" height="536" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;SchemeInfo&gt; schemes</Member>
+        <Member type="Field">public List&lt;LoanInfo&gt; loans</Member>
+        <Member type="Field">public List&lt;AmountInfo&gt; payments</Member>
+        <Member type="Property">public String clientId { get; set; }</Member>
+        <Member type="Property">public String clientName { get; set; }</Member>
+        <Member type="Property">public DateTime joinDate { get; set; }</Member>
+        <Member type="Property">public DateTime clientDateOfBirth { get; set; }</Member>
+        <Member type="Property">public String clientJointApplicantName { get; set; }</Member>
+        <Member type="Property">public DateTime clientJointApplicantDateOfBirth { get; set; }</Member>
+        <Member type="Property">public String clientGuardianFatherName { get; set; }</Member>
+        <Member type="Property">public String clientAddress { get; set; }</Member>
+        <Member type="Property">public Int32 clientPinCode { get; set; }</Member>
+        <Member type="Property">public String clientPhoneNumber { get; set; }</Member>
+        <Member type="Property">public String clientOccupation { get; set; }</Member>
+        <Member type="Property">public String clientNomineeName { get; set; }</Member>
+        <Member type="Property">public DateTime clientNomineeDateOfBirth { get; set; }</Member>
+        <Member type="Property">public String clientNomineeRelationship { get; set; }</Member>
+        <Member type="Property">public String clientPlan { get; set; }</Member>
+        <Member type="Property">public Double clientProposedValue { get; set; }</Member>
+        <Member type="Property">public Int32 clientPeriodMonth { get; set; }</Member>
+        <Member type="Property">public String clientPaymentMode { get; set; }</Member>
+        <Member type="Property">public Double clientPaymentAmountInstallment { get; set; }</Member>
+        <Member type="Property">public Double clientPaymentAmountServiceCharge { get; set; }</Member>
+        <Member type="Property">public Double clientPaymentAmountTotal { get; set; }</Member>
+        <Member type="Property">public String clientPaymentReciptNumber { get; set; }</Member>
+        <Member type="Property">public String clientIntroducerId { get; set; }</Member>
+        <Member type="Constructor">public ClientDetails()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AmountInfo</Name>
+        <Access>Public</Access>
+        <Location left="443" top="1173" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public Double amount { get; set; }</Member>
+        <Member type="Property">public String description { get; set; }</Member>
+        <Member type="Property">public AmountType type { get; set; }</Member>
+        <Member type="Constructor">public AmountInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AccountInfo</Name>
+        <Access>Public</Access>
+        <Location left="443" top="897" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public ClientDetails client</Member>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public Double balance { get; set; }</Member>
+        <Member type="Property">public List&lt;AmountInfo&gt; amounts { get; set; }</Member>
+        <Member type="Constructor">public AccountInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SchemeInfo</Name>
+        <Access>Public</Access>
+        <Location left="1079" top="1201" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Double incentivePercentage</Member>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String Type { get; set; }</Member>
+        <Member type="Property">public DateTime Duration { get; set; }</Member>
+        <Member type="Property">public DateTime dateOfStart { get; set; }</Member>
+        <Member type="Property">public String description { get; set; }</Member>
+        <Member type="Property">public AmountInfo amountPremium { get; set; }</Member>
+        <Member type="Constructor">public SchemeInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LoanInfo</Name>
+        <Access>Public</Access>
+        <Location left="867" top="1390" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Double interestPercentage</Member>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String Type { get; set; }</Member>
+        <Member type="Property">public DateTime Duration { get; set; }</Member>
+        <Member type="Property">public DateTime dateOfStart { get; set; }</Member>
+        <Member type="Property">public String description { get; set; }</Member>
+        <Member type="Property">public AmountInfo amountPrincipal { get; set; }</Member>
+        <Member type="Constructor">public LoanInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SchemeController</Name>
+        <Access>Public</Access>
+        <Location left="652" top="399" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;SchemeInfo&gt; schemes</Member>
+        <Member type="Constructor">public SchemeController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LoanController</Name>
+        <Access>Public</Access>
+        <Location left="1095" top="154" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;LoanInfo&gt; loans</Member>
+        <Member type="Constructor">public LoanController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ClientController</Name>
+        <Access>Public</Access>
+        <Location left="1060" top="658" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;ClientDetails&gt; clients</Member>
+        <Member type="Constructor">public ClientController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AgentsController</Name>
+        <Access>Public</Access>
+        <Location left="766" top="114" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;AgentDetails&gt; agents</Member>
+        <Member type="Constructor">public AgentsController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcountsController</Name>
+        <Access>Public</Access>
+        <Location left="820" top="658" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;AccountInfo&gt; accounts</Member>
+        <Member type="Constructor">public AcountsController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MFMSController</Name>
+        <Access>Public</Access>
+        <Location left="969" top="399" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public AgentsController agentsController</Member>
+        <Member type="Field">public ClientController clientController</Member>
+        <Member type="Field">public SchemeController SchemeController</Member>
+        <Member type="Field">public LoanController loanController</Member>
+        <Member type="Field">public AcountsController AcountsController</Member>
+        <Member type="Constructor">public MFMSController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EmployeeDetails</Name>
+        <Access>Public</Access>
+        <Location left="1079" top="897" />
+        <Size width="162" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String employeeId { get; set; }</Member>
+        <Member type="Property">public String employeeName { get; set; }</Member>
+        <Member type="Property">public DateTime employeeDob { get; set; }</Member>
+        <Member type="Property">public String employeeAddress { get; set; }</Member>
+        <Member type="Property">public String employeePhoneNumber { get; set; }</Member>
+        <Member type="Property">public String employeeEmail { get; set; }</Member>
+        <Member type="Property">public DateTime employeeJoinDate { get; set; }</Member>
+        <Member type="Property">public String employeeDepartment { get; set; }</Member>
+        <Member type="Property">public Double employeeSalary { get; set; }</Member>
+        <Member type="Property">public String employeeManagerId { get; set; }</Member>
+        <Member type="Constructor">public EmployeeDetails()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>IdGenerator</Name>
+        <Access>Public</Access>
+        <Location left="443" top="1417" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public static String GetAgentUniqueId()</Member>
+        <Member type="Method">public static String GetClientUniqueId()</Member>
+        <Member type="Method">public static String GetEmployeeUniqueId()</Member>
+        <Modifier>Static</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>UserTypeEnum</Name>
+        <Access>Public</Access>
+        <Location left="427" top="641" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>user = 0</Value>
+        <Value>manager = 1</Value>
+        <Value>owner = 2</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>ViewOrEdit</Name>
+        <Access>Public</Access>
+        <Location left="655" top="1474" />
+        <Size width="162" height="148" />
+        <Collapsed>False</Collapsed>
+        <Value>View = 0</Value>
+        <Value>Edit = 1</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>AmountType</Name>
+        <Access>Public</Access>
+        <Location left="1079" top="1474" />
+        <Size width="162" height="134" />
+        <Collapsed>False</Collapsed>
+        <Value>Debit = 0</Value>
+        <Value>Credit = 1</Value>
+        <Value>Overdraft = 2</Value>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="15">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>type</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>client</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="12" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>agentsController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="12" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>clientController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="12" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>SchemeController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="12" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>loanController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="12" second="11">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>AcountsController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
