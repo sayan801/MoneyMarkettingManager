@@ -29,6 +29,9 @@ namespace MmmData
         public double clientPaymentAmountServiceCharge  { get; set; } 
         public double clientPaymentAmountTotal  { get; set; } 
         public string clientPaymentReciptNumber  { get; set; } 
-        public string clientIntroducerId  { get; set; } 
+        public string clientIntroducerId  { get; set; }
+        public List<SchemeInfo> schemes;
+        public List<LoanInfo> loans;
+        public List<AmountInfo> payments;
     }
 }

@@ -27,5 +27,6 @@ namespace MmmData
         public string agentNomineeRelationship { get; set; }
         public string agentIntroducerId { get; set; }
         public string agentBranchId { get; set; }
+        public List<ClientDetails> clients;
     }
 }
