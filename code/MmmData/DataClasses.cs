@@ -20,13 +20,13 @@ namespace MmmData
         public string employeeManagerId { get; set; }
     }
 
-    public class AccountInfo
+   /* public class AccountInfo
     {
         public string id { get; set; }
         public ClientDetails client;
         public double balance { get; set; }
         public List<AmountInfo> amounts { get; set; }
-    }
+    } 
 
     public class SchemeInfo
     {
@@ -50,7 +50,7 @@ namespace MmmData
         public string description { get; set; }
         public AmountInfo amountPrincipal { get; set; }
         public double interestPercentage;
-    }
+    }*/
 
     public enum ViewOrEdit
     {
