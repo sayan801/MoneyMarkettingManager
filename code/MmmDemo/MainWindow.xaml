@@ -1,7 +1,7 @@
 ﻿<Window x:Class="MmmDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Money marketting manager" Height="540" Width="1326" WindowState="Maximized" Background="#FF256D25">
+        Title="Money marketting manager" Height="540" Width="1326" WindowState="Maximized" Background="WhiteSmoke">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

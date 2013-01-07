@@ -32,7 +32,7 @@
             <Setter.Value>
                 <RadialGradientBrush>
                     <GradientStop Color="Green" Offset="0" />
-                    <GradientStop Color="#FFE0C375" Offset="1" />
+                    <GradientStop Color="LightGray" Offset="1" />
                 </RadialGradientBrush>
             </Setter.Value>
         </Setter>
@@ -49,12 +49,12 @@
         <Setter Property="Background">
             <Setter.Value>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFE6F032" Offset="0.119" />
-                    <GradientStop Color="#57CD8C1B" Offset="1" />
+                    <GradientStop Color="Green" Offset="0.119" />
+                    <GradientStop Color="LightGray" Offset="1" />
                 </RadialGradientBrush>
             </Setter.Value>
         </Setter>
-        <Setter Property="Foreground" Value="#FF30962D" />
+        <Setter Property="Foreground" Value="#FFE9F9DE" />
         <Setter Property="FontSize" Value="32" />
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="BorderBrush" Value="#FF001900" />
