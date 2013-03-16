@@ -8,7 +8,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/MmmStyles;component/CommonStyle.xaml"/>
+                <ResourceDictionary Source="/MmmStyle;component/CommonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
