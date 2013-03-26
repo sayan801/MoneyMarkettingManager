@@ -11,7 +11,7 @@
     </Window.Resources>
     
     <DockPanel LastChildFill="True">
-        <Image DockPanel.Dock="Top" Name="companyLogoImage" StretchDirection="DownOnly" Source="/MmmDemo;component/Images/technicise.logo-header-medium.png">
+        <!--<Image DockPanel.Dock="Top" Name="companyLogoImage" StretchDirection="DownOnly" Source="/MmmDemo;component/Images/technicise.logo-header-medium.png">
             <Image.Style>
                 <Style>
                     <Style.Triggers>
@@ -28,7 +28,7 @@
                     </Style.Triggers>
                 </Style>
             </Image.Style>
-        </Image>
+        </Image>-->
         <Image DockPanel.Dock="Top" Name="companyNameImage"  StretchDirection="Both" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="/MmmDemo;component/Images/name.jpg" />
         <UniformGrid Width="300" DockPanel.Dock="Left" HorizontalAlignment="Left" Columns="1">
             <Button Content="Sign In" Name="loginBtn" Style="{StaticResource MainBtnStyle}" Click="loginBtn_Click"></Button>
